@@ -1,0 +1,34 @@
+[
+  {
+    "Field": "make_id",
+    "Type": "int unsigned",
+    "Null": "NO",
+    "Key": "PRI",
+    "Default": null,
+    "Extra": "auto_increment"
+  },
+  {
+    "Field": "value",
+    "Type": "varchar(250)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "",
+    "Extra": ""
+  },
+  {
+    "Field": "tcv_id",
+    "Type": "int",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "im_id",
+    "Type": "int",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  }
+]

@@ -1,0 +1,33 @@
+{
+    "description":"configuration",
+    "configuration":[{
+        "priority":1,
+        "FromTable":"Django Table 1",
+        "ToTables":[
+            {
+                "table_name":"vechicle_data",
+                "priority":3,
+                "columns":{
+                    "column1":"Django Table 1.column1",
+                    "column2":"Django Table 2.column2"
+                    }
+            },
+            {
+                "table_name":"maker",
+                "priority":1,
+                "columns":{
+                    "column1":"Django Table 1.column1",
+                    "column2":"Django Table 2.column2"
+                    } 
+            },
+            {
+                "table_name":"make",
+                "priority":2,
+                "columns":{
+                    "column1":"Django Table 1.column1",
+                    "column2":"Django Table 2.column2"
+                    } 
+            }
+        ]
+    }]
+}
