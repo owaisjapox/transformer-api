@@ -2,23 +2,27 @@
     "description":"configuration",
     "configuration":[{
         "priority":1,
-        "FromTable":"Django Table 1",
-        "ToTables":[
+        "TARGET_TABLE":"MAKE",
+        "COLUMNS_DATA":[
             {
-                "table_name":"vechicle_data",
-                "priority":3,
-                "columns":{
-                    "column1":"Django Table 1.column1",
-                    "column2":"Django Table 2.column2"
-                    }
+                "NAME":"MAKE_ID",
+                "PK": true,
+                "SOURCE":"DEALER_VEHICLE." 
+
             },
             {
-                "table_name":"maker",
-                "priority":1,
-                "columns":{
-                    "column1":"Django Table 1.column1",
-                    "column2":"Django Table 2.column2"
-                    } 
+                "table_name":"MAKER",
+                "priority":2,
+                "columns":[
+                    {
+                        "FromField":"MODEL",
+                        "ToColumn":"VALUE"
+                    },
+                    {
+                        "FromField":"",
+                        "FromColumn":""
+                    }
+                ]
             },
             {
                 "table_name":"make",

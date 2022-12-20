@@ -1,0 +1,6 @@
+
+
+
+const defineTable = (tableName, tableColumnsSpecification) => {
+    
+}
