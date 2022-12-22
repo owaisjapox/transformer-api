@@ -11,7 +11,7 @@ const router = express.Router();
  * @param {*} next 
  */
 const validator = (req, res, next) => {
-    
+    console.log("In validator");    
     next();
 }
 

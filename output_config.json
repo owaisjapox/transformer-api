@@ -40,7 +40,6 @@
                 "PK": true,
                 "REQUIRED":false,
                 "SOURCE":"" 
-
             },
             {
                 "NAME":"VALUE",
@@ -87,7 +86,8 @@
                 "NAME":"MAKE_ID",
                 "REQUIRED":true,
                 "SOURCE":"MAKE.MAKE_ID",
-                "CONDITION":"VALUE=DEALER_VEHICLE.MAKER",
+                "CONDITION":"VALUE=?",
+                "CONDITION_VALUES":["DEALER_VEHICLE.MAKER"],
                 "DEFAULT":0
             }
 
@@ -112,13 +112,13 @@
             {
                 "NAME":"STOCK_NUMBER",
                 "REQUIRED":true,
-                "SOURCE":"-->generateStockNumber",
+                "SOURCE":"generateStockNumber()",
                 "DEFAULT":""
             },
             {
                 "NAME":"VEHICLE_TITLE",
                 "REQUIRED":false,
-                "SOURCE":"-->generateVehicleTitle"
+                "SOURCE":"generateVehicleTitle()"
             },
             {
                 "NAME":"PRICE",
@@ -153,7 +153,7 @@
             {
                 "NAME":"M3_SIZE",
                 "REQUIRED":false,
-                "SOURCE":"-->generateM3"
+                "SOURCE":"generateM3()"
             }
         ]
 
