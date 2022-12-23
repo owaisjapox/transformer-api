@@ -15,7 +15,8 @@
             {
                 "NAME":"VALUE",
                 "REQUIRED":true,
-                "SOURCE": "DEALER_VEHICLE.MAKER"
+                "SOURCE": "DEALER_VEHICLE.MAKER",
+                "UNIQUE":true
             },
             {
                 "NAME":"TCV_ID",
@@ -44,7 +45,8 @@
             {
                 "NAME":"VALUE",
                 "REQUIRED":true,
-                "SOURCE": "DEALER_VEHICLE.MAKER"
+                "SOURCE": "DEALER_VEHICLE.MODEL",
+                "UNIQUE":true
             },
             {
                 "NAME":"TCV_ID",
